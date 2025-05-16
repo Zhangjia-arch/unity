@@ -48,8 +48,7 @@ public class Liquid : MonoBehaviour
                 _bottomRenderer.gameObject.SetActive(true);
 
                 _renderer.transform.localPosition = _renderer.transform.localPosition.WithY(_bottomRendererSize);
-                _renderer.transform.localScale =
-                    _renderer.transform.localScale.WithY(_unitSize * value - _bottomRendererSize);
+                _renderer.transform.localScale = _renderer.transform.localScale.WithY(_unitSize * value - _bottomRendererSize);
             }
             else
             {
